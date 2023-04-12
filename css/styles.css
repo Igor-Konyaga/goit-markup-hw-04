@@ -152,9 +152,15 @@ body {
 /* Main Page*/
 /* =============== Section Hero ================= */
 .hero {
+  max-width: 1440px;
+  margin: 0 auto;
   padding: 188px 0;
 
-  background-color: #2e2f42;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/main-page/main/Hero/bg-hero.jpg);
 }
 
 .hero-main-title {
@@ -193,6 +199,9 @@ body {
 /* ============== Section Advantages =================== */
 .advantages {
   padding: 120px 0px;
+}
+.advantages-icon{
+	
 }
 .visually-hidden {
   position: absolute;
@@ -261,7 +270,7 @@ body {
   gap: 24px;
 }
 .team-list-item {
-   --items: 4;
+  --items: 4;
   flex-basis: calc((100% - var(--retreat) * (var(--items) - 1)) / var(--items));
   background-color: #ffffff;
 }
@@ -328,11 +337,11 @@ body {
 .list-cards {
   display: flex;
   flex-wrap: wrap;
-column-gap: 24px;
+  column-gap: 24px;
   row-gap: 48px;
 }
 .list-card {
-   flex-basis: calc((100% - var(--retreat) * (var(--items) - 1)) / var(--items));
+  flex-basis: calc((100% - var(--retreat) * (var(--items) - 1)) / var(--items));
 }
 .list-card-content {
   padding: 32px 16px;
